@@ -1,2 +1,2 @@
 # repo-1
-can garip
+can garip can paranparça
