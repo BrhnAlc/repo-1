@@ -1,0 +1,19 @@
+/* üniversal selector */
+/* *tüm elementleri seçer */
+*{
+  /* !tüm elementlerin diş boşluklarıı sıfırladık */
+  margin: 0;
+  /* ?tüm elementlerin dış boşuklarını sıfırladık */
+  padding: 0;
+  color:crimson;
+}
+.images{
+  width: 400px;
+  height: 200px;
+  /* ! BORDER */
+  /* ? shorthand  */
+  border: 4px solid;
+  margin: 20px 20px;
+  padding: 30px 30px;
+  background-color: aqua;
+}
