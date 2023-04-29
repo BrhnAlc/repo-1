@@ -1,85 +1,46 @@
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 600;
+
+.text-style{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  /* ? Büyüklük */
+font-size:20px 
+font-weight:bolder;
+background-color: coral;
+border: px solid;
 }
-
-.text-style {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-
-  /*? Buyüklük */
-  font-size: 12px;
-
-  /*? Kalinlik */
-  font-weight: lighter;
-  font-weight: bolder;
-  font-weight: 500;
-
-  /*? Stil */
-  font-style: italic;
-
-  font-variant: small-caps;
-
-  /*? Hizalama left,right,center, justify*/
-  text-align: justify;
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /** Kalınlık */
+  font-weight: 400px;
+  background-color: rgb(159, 166, 153);
 }
-
-/** Descendant Selector */
-/*! p elementinin icerisindeki span'lerin rengini red yap */
-/* p span {
-  color: red;
-} */
-#my-body .text-style span {
-  color: red;
+span{
+  color: blue;
 }
-
-.decoration {
-  color: green;
-
-  text-decoration: overline; /*? ust cizgi*/
-  text-decoration: underline; /*? alt cizgi*/
-  text-decoration: line-through; /*? üzerini ciz*/
-  text-decoration: none; /*? default*/
+.decoration{
+  text-decoration: overline crimson;
 }
-.transformation {
-  color: blueviolet;
-  text-transform: capitalize;
-  text-transform: uppercase;
-  text-transform: lowercase;
-  text-transform: none;
+.transformation{
+  text-transform:lowercase ;
+  color: rgb(0, 60, 255);
 }
-
-.spacing {
-  color: yellowgreen;
-  letter-spacing: 4px; /*?Harfler arasi mesafe*/
-  word-spacing: 10px; /*?Kelimler arasi mesafe*/
-  line-height: 1.4; /*?satir yükseliği*/
+.spacing{
+  color:rgb(199, 55, 11);
+  letter-spacing:1px ;
+  word: spacing 2px; ;
+  line-height: 1.8;
 }
-
-.indent {
+.indent{
+  nav-index:30px;
   text-indent: 30px;
 }
-
-.direct {
-  text-align: right;
-  direction: rtl;
+.text-shadow{
+  text-shadow:15px 10px 5px rgba(26, 26, 21, 0.819) ;
 }
-
-.text-shadow {
-  text-shadow: 10px -15px 5px rgba(0, 0, 0, 0.5);
-  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
-}
-
-.box-shadow {
-  background-color: beige;
+.box-shadow{
+  box-shadow: 5px 5px 4px crimson ;
+  background-color: bisque;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 2px 5px 10px rgba(205, 5, 5, 0.3);
-
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }

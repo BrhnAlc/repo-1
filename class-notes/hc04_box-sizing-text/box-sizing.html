@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Box Sizing</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Sizing</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color:darkkhaki;
+    }
+.content{
+border: 5px solid red;
+width: 200px;
+padding: 10px;
+text-align: center;
+box-sizing: content-box;
+margin:10px;
+background-color: aqua;
+box-sizing: content-box;
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      /* Ortak ozelikleri barindan class */
-      .box {
-        width: 200px;
-        border: 5px solid red;
-        padding: 10px;
-        background-color: antiquewhite;
-      }
+}
 
-      /* Farkliliklari iceren class'lar */
-      .content {
-        box-sizing: content-box;
-      }
+.border{
+  border: 6px solid chocolate;
+  width: 200px;
+  padding: auto;
+  margin-left: 10px;
+  background-color: chartreuse;
+  padding: 10px;
+  box-sizing:border-box ;
 
-      .border {
-        box-sizing: border-box;
-        background-color: blueviolet;
-      }
-
-      .center {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Box Sizing</h1>
-
-    <div class="content box center">content-box</div>
-    <div class="border box center">border-box</div>
-  </body>
+}
+  </style>
+</head>
+<body>
+  <h1>Box Sizing</h1>
+  <div class="content">content-box</div>
+  <div class="border">border-box</div>
+  
+</body>
 </html>
