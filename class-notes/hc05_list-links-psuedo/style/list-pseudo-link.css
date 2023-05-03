@@ -1,3 +1,6 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
 ul{
     list-style-type: circle;
     list-style-type: square;
@@ -12,5 +15,63 @@ ul{
     color: red;
 }
 h2 i{
-font-size: 40px;
+font-size: 50px;
+color: rgb(255, 0, 98);
+}
+/* *pseudo classes */
+h1:first-child{
+    color: blue;
+}
+ul.pseudo{
+
+}
+/** class'ı x olan p elementinin içerisinde .y  classının içindeki id'li elementi seç */
+p.x.y#z{
+
+}
+body ul li:first-child{
+    color: crimson;
+}
+body ul li:nth-child(4){
+    color: blue;
+}
+body ul li:first-child:hover{
+    color: blue;
+    cursor: pointer;
+
+}
+input:focus{
+    background-color: brown;
+    color: white;
+    display: inline-block;
+}
+nav a:link{
+color:blue;    
+
+}
+nav a:visited{
+    color: rgb(220, 7, 7);
+}
+nav a:active{
+    color: chartreuse;
+}
+nav a:hover{
+    color: blue;
+}
+nav a{
+    text-decoration: none;
+    font-style: italic;
+    margin: 20px;
+}
+nav a:first-child:hover{
+    text-decoration: underline;
+}
+.p-elements::first-line{
+color: blue;
+}
+.p-elements::first-letter{
+    font-size: 40px;
+}
+p.before-after li:nth-child(2)::before{
+    content: "nice car";
 }
