@@ -19,11 +19,11 @@ body {
 #container {
   max-width: 1240px;
   /* height: 1036px; */
-  /* height: 100%; */
   background-color: rgba(0, 0, 0, 0.3);
   /* background-color: #0000004d; */
   margin: auto;
   margin-top: 30px;
+  /* padding-bottom: 1px; */
 }
 
 #title {
@@ -47,7 +47,6 @@ span {
 
 #survey-form-container {
   width: 500px;
-  height: 800px;
   background-color: rgba(0, 0, 0, 0.8);
   margin: auto;
   padding: 30px 40px;
@@ -65,7 +64,7 @@ span {
 }
 
 .input-box {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #checkbox,
@@ -86,6 +85,7 @@ span {
   border: none;
   color: white;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 #form-button:hover {
