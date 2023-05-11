@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+header{
+  background-color: aqua;
+  padding: 4rem;
+  font-size: 2rem;
+}
+nav{
+  background-color: chartreuse;
+  padding: 4rem;
+  position: sticky;
+  top: 0;
+  font-size: 1rem;
+
+}
+nav a{
+  padding: 1rem;
+  font-size: 1rem;
+}
+div i{
+  background-color: darkgreen;
+  color: white;
+  position:fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 0.8rem;
+  font-size: 2rem;
+}
