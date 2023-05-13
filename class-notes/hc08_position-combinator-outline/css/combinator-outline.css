@@ -1,55 +1,35 @@
-/*? COMBINATORS */
-* {
+*{
   box-sizing: border-box;
   margin: 0.5rem;
-}
 
-/** Descendent Selector*/
-/*! box class'ı icerisinde tüm p'leri sec */
-.box p {
+}
+.box p{
   color: red;
 }
-
-/* .box h1 {
-  color: blue;
-} */
-
-/** Child Selector */
-/*! parent'i box class olan tüm h1'leri seç */
-.box > h1 {
+ .box h1{
   color: blue;
 }
-
-/** Adjacent Sibling Selector */
-/*! box elementi kapandiktan sonraki ilk h1 elementi secer */
-.box + h1 {
-  color: blueviolet;
+.box > h1{
+  color: chartreuse;
+}
+.box + h1{
+  color: rgb(42, 71, 165);
+}
+.box ~ p{
+  color: chocolate;
 }
 
-/** General Sibling Selector */
-/*! box elementi kapandiktan sonraki tüm p elementleri secer */
-.box ~ p {
-  color: green;
-}
-
-h1#outline {
-  color: red;
-  width: 6rem;
-  height: 6rem;
-  border: 1px solid red;
-  font-size: 1rem;
+ #outline {
+  color: brown;
+  width: 10rem;
+  height: 10rem;
+  border: 0.5rem solid darkgreen;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-h1#outline:hover {
-  outline: 2px solid indigo;
-  outline-offset: 0.2rem;
-}
-
-input:hover {
-  /* outline: none; */
-  outline: 3px solid red;
+#outline:hover{
+  outline: 2px solid rgb(56, 53, 45);
+  outline-offset: 0.4rem;
 }
