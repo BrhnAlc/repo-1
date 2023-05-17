@@ -67,4 +67,35 @@ console.log(typeof adet)
 }
 
 //! Uncaught ReferenceError: localDegisken is not defined
-console.log(localDegisken)
+
+
+
+let age = prompt('How old are you?', 100);
+
+alert(`You are ${age} years old!`);
+
+//***** */
+let isLegit= confirm("Are you of legal age?");
+alert(isLegit); // true if OK is pressed
+
+
+var a = 25;
+console.log(a);
+
+var myNumber = 3;
+console.log(myNumber);
+
+var myNumber = 16;
+console.log(myNumber);
+
+var x=5;
+var y=7;
+y=x;
+
+var firstName = 'John' , lastName = 'Doe';
+console.log(firstName,lastName); 
+
+var a = 8;
+var b = 3; 
+a = b; 
+console.log(a);
