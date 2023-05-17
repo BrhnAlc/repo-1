@@ -9,10 +9,20 @@
 // console.log(str.charAt(str.length-1)); 
 
 
-//*örnek;
-let str = 'You do not Know what you do not know until you know.';
+// //*örnek;
+// let str = 'You do not Know what you do not know until you know.';
 
-console.log (str.search("know"));  //32
-console.log (str.search(/know/i)); //11 To replace case insensitive, use a regular expression with an /i flag (insensitive).
-console.log(str.search('W')); //-1 Capital 'W' is not found in the string
-console.log(str.search(/W/i)); //
+// // console.log (str.search("know"));  //32
+// console.log (str.search(/know/i)); //11 To replace case insensitive, use a regular expression with an /i flag (insensitive).
+// console.log(str.search('W')); //-1 Capital 'W' is not found in the string
+// console.log(str.search(/W/i)); //
+
+
+// let myString = "Mr Brown has a brown house and a brown car";
+// let myNewString = myString.replace("brown", "red");
+// console.log(myNewString);
+
+let str = "Hello John, welcome to Clarusway."
+
+let arr = str.split(" ");
+console.log (arr); // ['Hello', 'John,', 'welcome', 'to', 'Clarusway.']
