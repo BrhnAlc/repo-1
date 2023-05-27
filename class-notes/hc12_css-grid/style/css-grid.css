@@ -9,7 +9,7 @@
   grid-template-columns: 200px  4rem 1fr 2fr ;
   grid-template-columns: repeat(4,1fr);
 
-  grid-template-rows:repeat(3,1fr) ;
+  grid-template-rows:repeat(3,1fr)max_content;
  }
  .content{
 border: 1px solid;
@@ -30,4 +30,12 @@ background-color: #dede;
   background-image: url(https://cdn.pixabay.com/photo/2023/05/21/01/27/waterlily-8007670__340.jpg);
   background-size: cover;
   background-position:bottom center ;
+ }
+ .content{
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+ }
+ .c10{
+  overflow: auto;
  }
