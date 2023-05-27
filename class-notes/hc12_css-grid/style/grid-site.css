@@ -1,17 +1,16 @@
-* {
+*{
   box-sizing: border-box;
   margin: 0;
 }
-
-.grid {
+.grid{
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 200px 100px 1fr 100px;
-  text-align: center;
-}
+  grid-template-rows: 150px 200px 1fr 200px;
 
-header {
+
+}
+header{
   grid-column: span 12;
 }
 
@@ -20,28 +19,19 @@ header img {
   height: 100%;
   object-fit: cover;
 }
-nav {
+nav{
   grid-column: span 12;
-  background-color: plum;
+  background-color: chocolate;
 }
-
-aside {
+aside{
+  background-color: cadetblue;
   grid-column: span 3;
-  background-color: yellow;
 }
-main {
-  grid-column: span 9;
-  background-color: yellowgreen;
+main{
+  background-color: crimson;
+  grid-column: span  9;
 }
-
-footer {
+footer{
+  background-color: darkgreen;
   grid-column: span 12;
-  background-color: violet;
-}
-
-@media screen and (max-width: 400px) {
-  aside,
-  main {
-    grid-column: span 12;
-  }
 }
