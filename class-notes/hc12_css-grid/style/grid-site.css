@@ -35,3 +35,8 @@ footer{
   background-color: darkgreen;
   grid-column: span 12;
 }
+@media screen  and (max-width:400px){
+  aside, main{
+    grid-column: span 12;
+  }
+} 
