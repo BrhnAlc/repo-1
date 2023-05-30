@@ -41,7 +41,7 @@ nav {
   margin: auto;
   width: 50%;
   height: 70px;
-  overflow: hidden;
+  overflow: hidden; 
   padding: 1rem;
   /* transition-property: height; */
   /* transition-duration: 3s; */
