@@ -10,6 +10,7 @@ const car = {
   colors: ["pink", "blue"],
 }
 
+
 // //? 1.Yontem (. notasyon)
 // const brand = car.brand
 // console.log(brand)
@@ -198,6 +199,8 @@ console.log("SONUC:", toplaminiAl(2, 5, 10, 4, 6, 8))
 //? Spread operatoru ise iterables olan bir elemani bireysel
 //? degerler haline getirir.
 
+
+
 const ucanAraclar = ["drone", "heli", "ucak"]
 const karaAraclari = ["Tir", "Araba", "Kamyonet", "Bisiklet"]
 
@@ -216,6 +219,36 @@ console.log(cumle)
 
 console.log("MAX:", Math.max(1, 3, 4, -1, 4))
 const rakamlar = [23, 45, 66, 77, 12, -1]
+
+//! örnek spread operator
+const numbers = [1,2,3,4,5];
+const newNumber =[...numbers];
+
+console.log(newNumber)
+
+ //! örenek copy array using spread operator
+
+ const arr1 = [1,2,3];
+ const arr2 = [4,5,6];
+ const arr3 =[...arr1,...arr2,7,8,9];
+
+ console.log(arr3)
+
+//! örnek...
+const person = {
+  name:"Burhan",
+  age:34,
+};
+const newPerson = {
+  ...person ,
+  city :'New York'
+};
+console.log(newPerson)
+
+
+
+
+
 
 //? MATH.MIN
 console.log("MIN:", Math.min(...rakamlar))
