@@ -1,6 +1,12 @@
 console.log("***** SELECTORS *****")
 
-document.title = "DOM DOM 🚀"
+
+
+
+
+document.title="Burhan ✌️"
+
+// document.title = "DOM DOM 🚀"
 
 //*===========================================
 //*            GETELEMENTBYID()
