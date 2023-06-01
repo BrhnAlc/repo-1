@@ -11,115 +11,122 @@ document.title="Burhan ✌️"
 //*===========================================
 //*            GETELEMENTBYID()
 //*===========================================
-// document.getElementById("header").style.border = "1px solid red"
+ document.getElementById("header").style.border = "1px solid red"
 const myHeader = document.getElementById("header")
-console.log(myHeader)
+ console.log(myHeader)
 
-myHeader.style.backgroundColor = "red"
-myHeader.style.color = "white"
+ myHeader.style.backgroundColor = "red"
+ myHeader.style.color = "white"
 
-//* Add Buton
-const addButon = document.getElementById("btn")
-console.log(addButon)
 
-addButon.style.backgroundColor = "#bebe"
-addButon.style.border = "none"
-addButon.style.borderRadius = "10px"
-addButon.style.padding = "0.6rem"
+ const input =document.getElementById("input");
+ console.log(input)
+ const addButon =document.getElementById("btn")
+ console.log(addButon)
+// const addButon =document.getElementById("btn")
+// //* Add Buton
+// const addButon = document.getElementById("btn")
+// console.log(addButon)
 
-//? Deger atama
-addButon.value = "SAVE"
+addButon.style.backgroundColor="#bebe"
+// addButon.style.backgroundColor = "#bebe"
+// addButon.style.border = "none"
+// addButon.style.borderRadius = "10px"
+// addButon.style.padding = "0.6rem"
 
-//* h1
-const h1 = document.getElementById("heading1")
-console.log(h1)
+// //? Deger atama
+// addButon.value = "SAVE"
 
-//? Deger atama
-h1.textContent = "DOM Introduction"
+// //* h1
+// const h1 = document.getElementById("heading1")
+// console.log(h1)
 
-//? Deger okuma
-console.log(h1.textContent)
-console.log(h1.innerText)
-console.log(h1.innerHTML)
+// //? Deger atama
+// h1.textContent = "DOM Introduction"
 
-//*===========================================
-//*          GETELEMENTSBYTAGNAME()
-//*===========================================
+// //? Deger okuma
+// console.log(h1.textContent)
+// console.log(h1.innerText)
+// console.log(h1.innerHTML)
 
-const myInputs = document.getElementsByTagName("input")
-console.log(myInputs) //? [input#input, input#btn, input: input#input, btn: input#btn]
+// //*===========================================
+// //*          GETELEMENTSBYTAGNAME()
+// //*===========================================
 
-//! HTML Collection (Array-Like) dondurur.
-console.log("Size:", myInputs.length)
+// const myInputs = document.getElementsByTagName("input")
+// console.log(myInputs) //? [input#input, input#btn, input: input#input, btn: input#btn]
 
-console.log(myInputs[0])
-console.log(myInputs[1])
+// //! HTML Collection (Array-Like) dondurur.
+// console.log("Size:", myInputs.length)
 
-console.log(document.getElementsByTagName("h3")[0])
+// console.log(myInputs[0])
+// console.log(myInputs[1])
 
-//? indisle erişime ek olarak item() metodu ile de erisim yapilabilir.
-console.log(myInputs.item(1))
+// console.log(document.getElementsByTagName("h3")[0])
 
-//? Array'e cevilebilir.
-const myLists = document.getElementsByTagName("li")
-const myListsArr = [...myLists] //?Array'e cevir
-console.log(myListsArr)
+// //? indisle erişime ek olarak item() metodu ile de erisim yapilabilir.
+// console.log(myInputs.item(1))
 
-myListsArr.forEach((li) => (li.style.color = "red"))
+// //? Array'e cevilebilir.
+// const myLists = document.getElementsByTagName("li")
+// const myListsArr = [...myLists] //?Array'e cevir
+// console.log(myListsArr)
 
-//?Alternative olarak
-const myListsArr1 = Array.from(myLists) //?Array'e cevir
-console.log(myListsArr1)
-myListsArr1.map((li) => (li.style.listStyleType = "none"))
-//*===========================================
-//*          GETELEMENTSBYCLASSNAME()
-//*===========================================
-const lists = document.getElementsByClassName("list") //? HTMLCollection(5) [li.list, li.list, li.list, li.list, li.list]
+// myListsArr.forEach((li) => (li.style.color = "red"))
 
-const listsArr = [...lists]
-listsArr.forEach((li) => console.log(li))
+// //?Alternative olarak
+// const myListsArr1 = Array.from(myLists) //?Array'e cevir
+// console.log(myListsArr1)
+// myListsArr1.map((li) => (li.style.listStyleType = "none"))
+// //*===========================================
+// //*          GETELEMENTSBYCLASSNAME()
+// //*===========================================
+// const lists = document.getElementsByClassName("list") //? HTMLCollection(5) [li.list, li.list, li.list, li.list, li.list]
 
-// lists[2].innerHTML = "Javascript language"
-lists[2].innerHTML = `<h1>Javascript</h1>`
-lists[3].innerText = `<h1>React</h1>`
-lists[4].textContent = `<h1>VUE</h1>`
-//* ========================================
-//*              QUERYSELECTOR()
-//* ========================================
-// ! QUery Selector ile id, tag, class seçilebilir.
-//! bu secici akısta gördügü ilk elementi secer
+// const listsArr = [...lists]
+// listsArr.forEach((li) => console.log(li))
 
-//? id secildi (#)
-const header = document.querySelector("#header")
-console.log(header)
+// // lists[2].innerHTML = "Javascript language"
+// lists[2].innerHTML = `<h1>Javascript</h1>`
+// lists[3].innerText = `<h1>React</h1>`
+// lists[4].textContent = `<h1>VUE</h1>`
+// //* ========================================
+// //*              QUERYSELECTOR()
+// //* ========================================
+// // ! QUery Selector ile id, tag, class seçilebilir.
+// //! bu secici akısta gördügü ilk elementi secer
 
-//? class secildi (.)
-const itemLists = document.querySelector(".list")
-console.log(itemLists)
+// //? id secildi (#)
+// const header = document.querySelector("#header")
+// console.log(header)
 
-//? h2 tag'ı secilmis oldu.
-const h2 = document.querySelector("h2")
-console.log(h2)
+// //? class secildi (.)
+// const itemLists = document.querySelector(".list")
+// console.log(itemLists)
 
-//? CSS deki selector mantigi kullanabilir
-const otherH2 = document.querySelector("section h2")
+// //? h2 tag'ı secilmis oldu.
+// const h2 = document.querySelector("h2")
+// console.log(h2)
 
-const buton = document.querySelector("section.add-item #btn")
-console.log(buton)
+// //? CSS deki selector mantigi kullanabilir
+// const otherH2 = document.querySelector("section h2")
 
-const react = document.querySelector("section.item-list ul li:nth-child(4)")
-console.log(react)
+// const buton = document.querySelector("section.add-item #btn")
+// console.log(buton)
 
-//* ========================================
-//*              QUERYSELECTORALL()
-//* ========================================
+// const react = document.querySelector("section.item-list ul li:nth-child(4)")
+// console.log(react)
 
-const listeler = document.querySelectorAll("ul li")
-console.log(listeler) //? NodeList(5) [li.list, li.list, li.list, li.list, li.list]
+// //* ========================================
+// //*              QUERYSELECTORALL()
+// //* ========================================
 
-listeler.forEach((li) => console.log(li))
+// const listeler = document.querySelectorAll("ul li")
+// console.log(listeler) //? NodeList(5) [li.list, li.list, li.list, li.list, li.list]
 
-//? alternative olarak
-for (const liste of listeler.values()) {
-  console.log(liste)
-}
+// listeler.forEach((li) => console.log(li))
+
+// //? alternative olarak
+// for (const liste of listeler.values()) {
+//   console.log(liste)
+// }
