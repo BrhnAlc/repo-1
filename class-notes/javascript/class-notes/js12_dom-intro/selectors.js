@@ -4,6 +4,7 @@ console.log("***** SELECTORS *****")
 
 
 
+
 document.title="Burhan ✌️"
 
 // document.title = "DOM DOM 🚀"
@@ -11,24 +12,40 @@ document.title="Burhan ✌️"
 //*===========================================
 //*            GETELEMENTBYID()
 //*===========================================
- document.getElementById("header").style.border = "1px solid red"
-const myHeader = document.getElementById("header")
- console.log(myHeader)
+//  document.getElementById("header").style.border = "1px solid red"
+// const myHeader = document.getElementById("header")
+//  console.log(myHeader)
 
- myHeader.style.backgroundColor = "red"
- myHeader.style.color = "white"
+const burhan =document.getElementsByClassName("item-list")
+
+console.log(burhan)
 
 
- const input =document.getElementById("input");
- console.log(input)
- const addButon =document.getElementById("btn")
- console.log(addButon)
+
+
+
+
+
+
+
+
+
+
+
+//  myHeader.style.backgroundColor = "red"
+//  myHeader.style.color = "white"
+
+
+//  const input =document.getElementById("input");
+//  console.log(input)
+//  const addButon =document.getElementById("btn")
+//  console.log(addButon)
 // const addButon =document.getElementById("btn")
 // //* Add Buton
 // const addButon = document.getElementById("btn")
 // console.log(addButon)
 
-addButon.style.backgroundColor="#bebe"
+// addButon.style.backgroundColor="#bebe"
 // addButon.style.backgroundColor = "#bebe"
 // addButon.style.border = "none"
 // addButon.style.borderRadius = "10px"
@@ -111,8 +128,8 @@ addButon.style.backgroundColor="#bebe"
 
 // //? CSS deki selector mantigi kullanabilir
 
-const otherH2 = document.querySelector("section h2")
-console.log(otherH2)
+// const otherH2 = document.querySelector("section h2")
+// console.log(otherH2)
 
 // const otherH2 = document.querySelector("section h2")
 
