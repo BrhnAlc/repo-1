@@ -3,10 +3,7 @@ console.log("**** TRAVERSING DOM ****")
 //*===========================================
 //*            TRAVERSING DOM
 //*===========================================
-//? Bir HTML elementi uzerinden baska elementleri secmeye
-//? DOM traversing denilir. Ozellikle dinamik olarak degisen
-//? (silme veya yeni ekleme gibi) HTML elemanlarinin secerken
-//? gerekli olabilir.
+//? Bir HTML elementi uzerinden baska elementleri secmeye DOM traversing denilir. Ozellikle dinamik olarak degisen(silme veya yeni ekleme gibi) HTML elemanlarinin secerken gerekli olabilir.
 
 //? Secme islemi 3 yonlu yapilabilir.
 //? - Yukari yonde (Parent)
@@ -29,7 +26,7 @@ console.log(list.textContent)
 
 console.log(list.closest("section")) //?//! closest(): belirtilen elementin parent'larin ilk uygun parent'i secer
 
-console.log(list.closest("body").querySelector("header h1").innerText)
+ console.log(list.closest("body").querySelector("header h1").innerText)
 
 //* 2- Asagi Yonde traverse
 //*----------------------------------------------

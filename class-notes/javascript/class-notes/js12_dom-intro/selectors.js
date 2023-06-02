@@ -105,10 +105,15 @@ addButon.style.backgroundColor="#bebe"
 // console.log(itemLists)
 
 // //? h2 tag'ı secilmis oldu.
+
 // const h2 = document.querySelector("h2")
 // console.log(h2)
 
 // //? CSS deki selector mantigi kullanabilir
+
+const otherH2 = document.querySelector("section h2")
+console.log(otherH2)
+
 // const otherH2 = document.querySelector("section h2")
 
 // const buton = document.querySelector("section.add-item #btn")
