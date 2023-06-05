@@ -12,9 +12,9 @@ document.title="Burhan ✌️"
 //*===========================================
 //*            GETELEMENTBYID()
 //*===========================================
-//  document.getElementById("header").style.border = "1px solid red"
-// const myHeader = document.getElementById("header")
-//  console.log(myHeader)
+  document.getElementById("header").style.border = "1px solid red"
+ const myHeader = document.getElementById("header")
+  console.log(myHeader)
 
 const burhan =document.getElementsByClassName("item-list")
 
@@ -32,15 +32,13 @@ console.log(burhan)
 
 
 
-//  myHeader.style.backgroundColor = "red"
-//  myHeader.style.color = "white"
-
-
-//  const input =document.getElementById("input");
-//  console.log(input)
-//  const addButon =document.getElementById("btn")
-//  console.log(addButon)
-// const addButon =document.getElementById("btn")
+  myHeader.style.backgroundColor = "red"
+  myHeader.style.color = "white"
+  const input =document.getElementById("input");
+  console.log(input)
+  const addButon1 =document.getElementById("btn")
+  console.log(addButon1)
+ const addButon =document.getElementById("btn")
 // //* Add Buton
 // const addButon = document.getElementById("btn")
 // console.log(addButon)
@@ -55,31 +53,29 @@ console.log(burhan)
 // addButon.value = "SAVE"
 
 // //* h1
-// const h1 = document.getElementById("heading1")
-// console.log(h1)
+ const h1 = document.getElementById("heading1")
+ console.log(h1)
 
 // //? Deger atama
 // h1.textContent = "DOM Introduction"
 
 // //? Deger okuma
-// console.log(h1.textContent)
-// console.log(h1.innerText)
-// console.log(h1.innerHTML)
+console.log(h1.textContent)
+console.log(h1.innerText)
+console.log(h1.innerHTML)
 
 // //*===========================================
 // //*          GETELEMENTSBYTAGNAME()
 // //*===========================================
 
-// const myInputs = document.getElementsByTagName("input")
-// console.log(myInputs) //? [input#input, input#btn, input: input#input, btn: input#btn]
+ const myInputs = document.getElementsByTagName("input")
+ console.log(myInputs) //? [input#input, input#btn, input: input#input, btn: input#btn]
 
 // //! HTML Collection (Array-Like) dondurur.
-// console.log("Size:", myInputs.length)
-
-// console.log(myInputs[0])
-// console.log(myInputs[1])
-
-// console.log(document.getElementsByTagName("h3")[0])
+ console.log("Size:", myInputs.lengt)
+ console.log(myInputs[0])
+ console.log(myInputs[1])
+ console.log(document.getElementsByTagName("h3")[0])
 
 // //? indisle erişime ek olarak item() metodu ile de erisim yapilabilir.
 // console.log(myInputs.item(1))
@@ -98,7 +94,7 @@ console.log(burhan)
 // //*===========================================
 // //*          GETELEMENTSBYCLASSNAME()
 // //*===========================================
-// const lists = document.getElementsByClassName("list") //? HTMLCollection(5) [li.list, li.list, li.list, li.list, li.list]
+const lists = document.getElementsByClassName("list") //? HTMLCollection(5) [li.list, li.list, li.list, li.list, li.list]
 
 // const listsArr = [...lists]
 // listsArr.forEach((li) => console.log(li))
@@ -113,18 +109,18 @@ console.log(burhan)
 // // ! QUery Selector ile id, tag, class seçilebilir.
 // //! bu secici akısta gördügü ilk elementi secer
 
-// //? id secildi (#)
-// const header = document.querySelector("#header")
-// console.log(header)
+ //? id secildi (#)
+ const header = document.querySelector("#header")
+ console.log(header)
 
-// //? class secildi (.)
-// const itemLists = document.querySelector(".list")
-// console.log(itemLists)
+ //? class secildi (.)
+ const itemLists = document.querySelector(".list")
+ console.log(itemLists)
 
 // //? h2 tag'ı secilmis oldu.
 
-// const h2 = document.querySelector("h2")
-// console.log(h2)
+const h2 = document.querySelector("h2")
+console.log(h2)
 
 // //? CSS deki selector mantigi kullanabilir
 
