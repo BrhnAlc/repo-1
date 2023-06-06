@@ -5,86 +5,90 @@ console.log("**** CREATE NODE ****")
 const langInput = document.querySelector("#input")
 
 //? 1- olustur
+
 const newP = document.createElement("p")
+const text =document.createTextNode("bu bir p elementidir")
+const text =document.createTextNode("bu bir p elementidir")
 
-//? 2-Eger text tabanlı bir element ise text dugumunu olustur
-// const text = document.createTextNode("Bu bir yeni p elementidir.")
-const text = document.createTextNode(langInput.value)
+// const newP = document.createElement("p")
 
-//? 3- Olusturulan text dugumunu yeni elemente bagla (append)
-newP.appendChild(text)
+// //? 2-Eger text tabanlı bir element ise text dugumunu olustur
+// // const text = document.createTextNode("Bu bir yeni p elementidir.")
+// const text = document.createTextNode(langInput.value)
 
-console.log(newP)
-//? 4- Yeni elementin DOM tree baglanmasi (append)
+// //? 3- Olusturulan text dugumunu yeni elemente bagla (append)
+// newP.appendChild(text)
+ console.log(newP)
+// //? 4- Yeni elementin DOM tree baglanmasi (append)
 
-//* main bolumun en sonuna yeni elementi ekler.
-const main = document.querySelector("main")
-main.appendChild(newP)
+// //* main bolumun en sonuna yeni elementi ekler.
+// const main = document.querySelector("main")
+// main.appendChild(newP)
 
-//* item-list section'nın onune yeni elementi ekler.
-//! Element.before()  ve Element.after() appenChild gibi aslında bir elementi DOM Tree'ye baglar.
-const itemListSection = document.querySelector(".item-list")
-itemListSection.before(newP)
+// //* item-list section'nın onune yeni elementi ekler.
+// //! Element.before()  ve Element.after() appenChild gibi aslında bir elementi DOM Tree'ye baglar.
+// const itemListSection = document.querySelector(".item-list")
+// itemListSection.before(newP)
 
-//* ------- ID, CLASS GIBI OZELLIKLERI ATAMA ------
-//? 1) Yontem
-newP.id = "paragraf"
-newP.className = "par center"
-newP.name = "deneme"
+// //* ------- ID, CLASS GIBI OZELLIKLERI ATAMA ------
+// //? 1) Yontem
+// newP.id = "paragraf"
+// newP.className = "par center"
+// newP.name = "deneme"
 
-//? 2) setAttribute()
-newP.setAttribute("id", "new-id")
-newP.setAttribute("class", "new-class")
-newP.setAttribute("name", "new-class")
-newP.setAttribute("type", "button")
+// //? 2) setAttribute()
+// newP.setAttribute("id", "new-id")
+// newP.setAttribute("class", "new-class")
+// newP.setAttribute("name", "new-class")
+// newP.setAttribute("type", "button")
 
-//? 3) classList
-newP.classList.add("bg-danger", "border")
+// //? 3) classList
+// newP.classList.add("bg-danger", "border")
 
-console.log(newP.classList.contains("new-class"))
+// console.log(newP.classList.contains("new-class"))
 
-//* classList.contains()
-if (newP.classList.contains("border")) {
-  newP.classList.add("border-success")
-}
+// //* classList.contains()
+// if (newP.classList.contains("border")) {
+//   newP.classList.add("border-success")
+// }
 
-//* classList.remove()
-if (newP.classList.contains("new-class")) {
-  newP.classList.remove("new-class")
-}
+// //* classList.remove()
+// if (newP.classList.contains("new-class")) {
+//   newP.classList.remove("new-class")
+// }
 
-//* classList.toggle()  (bir class varsa kaldirir yoksa ekler)
-newP.classList.toggle("bg-danger")
+// //* classList.toggle()  (bir class varsa kaldirir yoksa ekler)
+// newP.classList.toggle("bg-danger")
 
-//* ------- ID, CLASS GIBI OZELLIKLERINI OKUMA ------
-//? 1) Yontem
-console.log(newP.id)
-console.log(newP.className)
+// //* ------- ID, CLASS GIBI OZELLIKLERINI OKUMA ------
+// //? 1) Yontem
+// console.log(newP.id)
+// console.log(newP.className)
 
-//? 2) getAttribute()
-console.log(newP.getAttribute("type"))
-console.log(newP.getAttribute("class"))
+// //? 2) getAttribute()
+// console.log(newP.getAttribute("type"))
+// console.log(newP.getAttribute("class"))
 
-//* ------- YENI BIR ELEMENT OLUSTURMA (INNERHTML)------
-const ul = document.querySelector("ul")
+// //* ------- YENI BIR ELEMENT OLUSTURMA (INNERHTML)------
+// const ul = document.querySelector("ul")
 
-ul.innerHTML += ` 
-   <li>C++</li>
-   <li>java</li>
-   <li>C</li>
-   <li>go</li>`
+// ul.innerHTML += ` 
+//    <li>C++</li>
+//    <li>java</li>
+//    <li>C</li>
+//    <li>go</li>`
 
-//* ------- YENI BIR ELEMENT OLUSTURMA (INNERHTML)------
+// //* ------- YENI BIR ELEMENT OLUSTURMA (INNERHTML)------
 
-const newDiv = document.createElement("div")
-newDiv.id = "my-div"
-itemListSection.after(newDiv)
+// const newDiv = document.createElement("div")
+// newDiv.id = "my-div"
+// itemListSection.after(newDiv)
 
-newDiv.innerHTML += `
-<h2 class="par center">Languages</h2>
-<ul>
-  <li>C++</li>
-  <li>java</li>
-  <li>C</li>
-  <li>go</li>
-</ul>`
+// newDiv.innerHTML += `
+// <h2 class="par center">Languages</h2>
+// <ul>
+//   <li>C++</li>
+//   <li>java</li>
+//   <li>C</li>
+//   <li>go</li>
+// </ul>`
